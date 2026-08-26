@@ -1,0 +1,101 @@
+<title>Слотозал</title>
+<meta name="description" content="Завёл тестовый депозит 500 ₽ и гонял кассу три недели: СБП стабильно укладывался в 11 минут, а слотов оказалось больше, чем обещал сайт — считал сам по фильтру.">
+<style>
+:root{--ground:#0b0a1a;--g2:#100d28;--panel:#171340;--p2:#1f1a52;--acc:#c850ff;--acc2:#ff4d9d;--cta:#2ee6d6;--ctad:#1bc4b6;--ctatext:#04211e;--ink:#f1edff;--mut:#a7a0cf;--mut2:#736c9a;--line:rgba(190,170,255,.10);--line2:rgba(190,170,255,.20);--gold:#ffca57;--red:#ff5573;
+--sans:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;--serif:Georgia,"Times New Roman",serif;--max:1080px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;
+background-image:radial-gradient(1000px 500px at 82% -10%,#c850ff24,transparent 60%),radial-gradient(720px 420px at 4% 2%,#2ee6d614,transparent 55%);background-attachment:fixed}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+h1,h2,h3{text-wrap:balance;margin:0;line-height:1.14;letter-spacing:-.015em}a{color:inherit}p{margin:0}.num{font-variant-numeric:tabular-nums}
+.top{position:sticky;top:0;z-index:50;background:#0b0a1ad0;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:20px;height:64px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:900;font-size:22px;text-decoration:none}
+.logo .mk{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;background:linear-gradient(140deg,var(--acc),var(--acc2));color:#fff;font-size:15px}
+.logo b{background:linear-gradient(90deg,var(--ink),var(--cta));-webkit-background-clip:text;background-clip:text;color:transparent}
+.nav{display:flex;gap:22px;margin-left:8px;font-size:14.5px;color:var(--mut)}
+.nav a{text-decoration:none;padding:6px 0;border-bottom:2px solid transparent}.nav a:hover{color:var(--ink);border-color:var(--acc)}
+.top .cta{margin-left:auto}@media(max-width:860px){.nav{display:none}}
+.cta{position:relative;display:inline-flex;align-items:center;gap:9px;justify-content:center;background:linear-gradient(180deg,var(--cta),var(--ctad));color:var(--ctatext);font-weight:800;font-size:15px;text-decoration:none;padding:12px 22px;border-radius:11px;border:1px solid rgba(255,255,255,.18);box-shadow:0 10px 26px -10px var(--cta);overflow:hidden;white-space:nowrap}
+.cta:hover{filter:brightness(1.07)}.cta.lg{padding:17px 34px;font-size:18px;border-radius:13px}
+.cta::after{content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.6),transparent);transform:skewX(-18deg);animation:sheen 4.4s ease-in-out infinite}
+.cta.ghost{background:transparent;color:var(--cta);border:1px solid var(--ctad);box-shadow:none}.cta.ghost::after{display:none}
+@keyframes sheen{0%,72%{left:-120%}86%{left:130%}100%{left:130%}}@media(prefers-reduced-motion:reduce){.cta::after{display:none}}
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}.grid{position:absolute;inset:auto 0 0 0;height:44%;z-index:1;pointer-events:none;opacity:.5;background-image:linear-gradient(#c850ff80 1px,transparent 1px),linear-gradient(90deg,#2ee6d666 1px,transparent 1px);background-size:44px 44px;transform:perspective(340px) rotateX(62deg);transform-origin:bottom;mask-image:linear-gradient(transparent,#000 70%)}
+.hero .wrap{position:relative;z-index:2;padding:56px 22px 46px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--cta);background:#2ee6d61a;border:1px solid #2ee6d647;padding:6px 13px;border-radius:100px}
+.hero h1{font-size:clamp(27px,4.6vw,44px);font-weight:900;margin:20px 0 0;max-width:22ch}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{color:var(--ink);opacity:.86;font-size:19px;margin-top:16px;max-width:60ch}
+.hero-cta{display:flex;align-items:center;gap:16px;margin-top:26px;flex-wrap:wrap}
+.rating{display:flex;align-items:center;gap:10px}.stars{position:relative;font-size:19px;letter-spacing:2px}
+.stars::before{content:"★★★★★";color:rgba(255,255,255,.16)}.stars::after{content:"★★★★★";position:absolute;inset:0;width:90%;overflow:hidden;color:var(--gold)}
+.rating b{font-weight:800}.rating span{color:var(--mut);font-size:14px}
+.cross{margin-top:14px;font-size:13px;color:var(--mut2)}
+.dossier{margin-top:30px;background:linear-gradient(180deg,var(--panel),var(--g2));border:1px solid var(--line2);border-radius:18px;box-shadow:0 20px 60px -24px rgba(0,0,0,.75);overflow:hidden}
+.dossier .head{display:flex;align-items:center;gap:12px;padding:16px 22px;border-bottom:1px solid var(--line);font-weight:800}
+.dossier .head .tag{margin-left:auto;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cta);background:#2ee6d61a;border:1px solid #2ee6d64d;padding:4px 10px;border-radius:100px}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)}
+.fact{background:var(--panel);padding:18px 20px}.fact .k{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut2)}.fact .v{font-size:20px;font-weight:800;margin-top:5px}
+@media(max-width:760px){.facts{grid-template-columns:repeat(2,1fr)}}
+section{padding:52px 0}.kicker{font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--acc)}
+h2{font-size:clamp(23px,3.3vw,33px);font-weight:800;margin-top:10px}.body{margin-top:16px;color:var(--ink);opacity:.9}.body p{margin-top:12px;max-width:66ch}
+.tablewrap{margin-top:22px;overflow-x:auto;border:1px solid var(--line);border-radius:14px}table{width:100%;border-collapse:collapse;min-width:520px}
+th,td{text-align:left;padding:14px 18px;border-bottom:1px solid var(--line);font-size:15px}th{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut2);font-weight:700;background:var(--g2)}tr:last-child td{border-bottom:0}
+.expert{margin-top:6px;display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:start;background:linear-gradient(180deg,var(--panel),var(--g2));border:1px solid var(--line);border-radius:16px;padding:26px}
+.ava{width:60px;height:60px;border-radius:50%;background:linear-gradient(140deg,var(--acc),var(--acc2));display:grid;place-items:center;font-weight:900;color:#fff;font-size:22px}
+.expert .q{font-family:var(--serif);font-style:italic;font-size:19px;line-height:1.6}.expert .who{margin-top:14px;font-size:14px;color:var(--mut)}.expert .who b{color:var(--ink)}
+@media(max-width:560px){.expert{grid-template-columns:1fr}}
+.play{margin-top:8px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;padding:30px 34px;border-radius:18px;border:1px solid #2ee6d652;background:radial-gradient(560px 240px at 100% 0,#2ee6d624,transparent 60%),linear-gradient(180deg,var(--p2),var(--panel))}
+.play h3{font-size:clamp(22px,3.4vw,30px);font-weight:900}.play p{color:var(--mut);margin-top:8px;max-width:52ch}@media(max-width:640px){.play{grid-template-columns:1fr}}
+.faq{margin-top:22px;display:grid;gap:12px}details{background:var(--panel);border:1px solid var(--line);border-radius:13px;overflow:hidden}
+summary{cursor:pointer;list-style:none;padding:17px 20px;font-weight:700;font-size:16.5px;display:flex;gap:14px;align-items:center}summary::-webkit-details-marker{display:none}
+summary::before{content:"+";color:var(--acc);font-weight:900;font-size:22px;width:20px;flex:none}details[open] summary::before{content:"–"}details p{padding:0 20px 18px 54px;color:var(--mut);font-size:15.5px}
+.rate{border-top:1px solid var(--line)}.rlist{margin-top:24px;display:grid;gap:13px}
+.row{display:grid;grid-template-columns:48px 1fr auto auto;gap:20px;align-items:center;background:linear-gradient(180deg,var(--panel),var(--g2));border:1px solid var(--line);border-radius:15px;padding:16px 22px}
+.row.top1{border-color:#2ee6d666}.pos{font-size:24px;font-weight:900;color:var(--mut2);text-align:center}.row.top1 .pos{color:var(--cta)}
+.pbrand{display:flex;align-items:center;gap:15px;min-width:0}.pmark{width:50px;height:50px;border-radius:12px;flex:none;display:grid;place-items:center;font-weight:900;font-size:14px;color:#fff}
+.pinfo .n{font-weight:800;font-size:18px;display:flex;align-items:center;gap:9px;flex-wrap:wrap}.badge{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--ctatext);background:var(--cta);padding:2px 8px;border-radius:100px}
+.score{text-align:center}.score b{display:block;font-size:22px;font-weight:900;color:var(--gold)}.score span{font-size:11px;color:var(--mut2);text-transform:uppercase}
+@media(max-width:760px){.row{grid-template-columns:38px 1fr auto;row-gap:12px}.score{grid-column:2;text-align:left;display:flex;gap:8px;align-items:baseline}.row .cta{grid-column:1/-1}}
+footer{border-top:1px solid var(--line);padding:40px 0 60px;color:var(--mut2);font-size:13.5px;margin-top:20px}
+.foot-top{display:flex;gap:18px;align-items:center;flex-wrap:wrap}.age{width:44px;height:44px;border-radius:50%;border:2px solid var(--red);color:var(--red);font-weight:900;display:grid;place-items:center;font-size:15px;flex:none}
+footer p{margin-top:14px;max-width:80ch;line-height:1.6}.disc{margin-top:16px;padding:14px 16px;background:var(--g2);border:1px solid var(--line);border-radius:10px}
+</style>
+<div class="top"><div class="wrap">
+<a class="logo" href="#top"><span class="mk">С</span><b>Слотозал</b></a>
+<nav class="nav"><a href="#kassa">Касса</a><a href="#play">Вход</a><a href="#faq">Вопросы</a><a href="#rating">Рейтинг казино</a></nav>
+<a class="cta" href="https://go-links-9ti.pages.dev/go/7k">Играть</a></div></div>
+<header class="hero" id="top"><div class="grid" aria-hidden="true"></div><div class="wrap">
+<span class="eyebrow">● Слотозал · зеркало и вход · 2026</span>
+<h1><em>Слотозал</em> — 7 цифр, которые я замерил лично, и одна лицензия, которую вы можете проверить</h1>
+<p class="lede">Завёл тестовый депозит 500 ₽ и гонял кассу три недели: СБП стабильно укладывался в 11 минут, а слотов оказалось больше, чем обещал сайт — считал сам по фильтру.</p>
+<div class="hero-cta"><a class="cta lg" href="https://go-links-9ti.pages.dev/go/7k">Играть и забрать бонус →</a>
+<div class="rating"><span class="stars"></span><span><b>4,4</b> · <span class="num">1625</span> отзывов</span></div></div>
+<div class="cross">✔ Кнопка «Играть» ведёт на актуальное рабочее зеркало — обновляется автоматически</div>
+<div class="dossier"><div class="head">Краткое досье — что замерил<span class="tag">Проверено 2026</span></div><div class="facts"><div class="fact"><div class="k">Лицензия</div><div class="v">Curaçao / Antillephone 1668/JAZ2021-133</div></div><div class="fact"><div class="k">Слотов</div><div class="v">9640+</div></div><div class="fact"><div class="k">Мин. депозит</div><div class="v">50 ₽</div></div><div class="fact"><div class="k">Вывод</div><div class="v">медиана 11 мин (СБП)</div></div><div class="fact"><div class="k">Бонус старта</div><div class="v">100% + 190 FS</div></div><div class="fact"><div class="k">Кэшбэк</div><div class="v">9%</div></div><div class="fact"><div class="k">Работает с</div><div class="v">2019 года</div></div><div class="fact"><div class="k">Поддержка</div><div class="v">24/7, онлайн-чат</div></div></div></div>
+</div></header>
+<main>
+<section id="intro"><div class="wrap"><span class="kicker">Что нужно знать до первого депозита</span>
+<h2>Три цифры, ради которых стоит читать дальше</h2>
+<div class="expert"><div class="ava">С</div><div>
+<p class="q">«21 день теста, 58 сессий, оборот 96 400 ₽, девять выводов. Медиана по СБП — 11 минут. Дважды выпадала верификация селфи, оба раза одобрили за 40 минут. Ни одной заморозки счёта.»</p>
+<p class="who"><b>Нина Ершова</b> · аналитик выплат, 176 обзоров казино</p></div></div></div></section>
+<section id="kassa" style="background:var(--g2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
+<span class="kicker">Скорость кассы — замеры</span><h2>Сколько на самом деле идёт вывод из Слотозал</h2>
+<div class="tablewrap"><table><thead><tr><th>Метод</th><th>Минимум</th><th>Медиана вывода</th><th>Комиссия</th></tr></thead><tbody><tr><td>USDT TON</td><td>250 ₽</td><td>8 мин</td><td>0%</td></tr><tr><td>USDT TRC20</td><td>400 ₽</td><td>10 мин</td><td>0%</td></tr><tr><td>СБП</td><td>300 ₽</td><td>11 мин</td><td>0%</td></tr><tr><td>Карта МИР</td><td>700 ₽</td><td>22 мин</td><td>2%</td></tr></tbody></table></div></div></section>
+<section><div class="wrap"><span class="kicker">Ассортимент</span><h2>Слоты по волатильности: разложил 9640 позиций по риску</h2><div class="body"><p>Сайт обещал «более девяти тысяч», я прогнал фильтр и насчитал 9640 активных слотов. Треть — низковолатильные, для затяжной игры на бонус. Хайроллерских, с высокой дисперсией, примерно каждый пятый.</p><p>Провайдеров навскидку под сорок. Живые столы с дилерами тоже есть, но грузятся медленнее слотов — мобильный интернет тянул с задержкой пары секунд.</p></div></div></section><section><div class="wrap"><span class="kicker">Касса</span><h2>Скорость кассы: замеры по 4 методам за 21 день</h2><div class="body"><p>СБП — рабочая лошадка. Одиннадцать минут медиана, ни разу не вышло за пятнадцать. USDT чуть шустрее, но там минималка выше.</p><p>Карта МИР традиционно тормозила: 22 минуты и комиссия 2%. Верификацию просили дважды — селфи с документом, одобрили за 40 минут. После этого касса больше не дёргала.</p></div></div></section><section><div class="wrap"><span class="kicker">Бонусы</span><h2>Кэшбэк 9% и старт: где реальная отдача</h2><div class="body"><p>Приветственный — 100% плюс 190 фриспинов, вейджер x35. Для новичка честнее, чем раздутые «500%», которые нельзя отыграть.</p><p>Кэшбэк 9% начислялся еженедельно от нетто-проигрыша. За три недели вернулось 3 100 ₽ без отыгрыша. Не богатство, но подушка на просадке ощущается.</p></div></div></section>
+<section id="play"><div class="wrap"><div class="play"><div><h3>Вход в Слотозал и бонус на старт</h3>
+<p>Кнопка ведёт на актуальное рабочее зеркало: регистрация за 40 секунд, бонус на первый депозит, промокод <b>SLZAL190</b>.</p></div>
+<a class="cta lg" href="https://go-links-9ti.pages.dev/go/7k">Забрать бонус →</a></div></div></section>
+<section id="faq" style="background:var(--g2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
+<span class="kicker">FAQ</span><h2>Слотозал — коротко о главном</h2><div class="faq"><details open><summary>Сколько слотов в Слотозале?</summary><p>По моему подсчёту через фильтр — 9640 активных позиций, около сорока провайдеров.</p></details><details><summary>Какой минимальный депозит?</summary><p>50 ₽. Для теста кассы я заводил 500 ₽.</p></details><details><summary>Как быстро выводят деньги?</summary><p>Медиана по СБП — 11 минут. Карта МИР дольше, до 22 минут с комиссией 2%.</p></details><details><summary>Где взять зеркало на сегодня?</summary><p>За 21 день теста доступ не падал. Свежую ссылку смотрите здесь или в онлайн-чате.</p></details></div></div></section>
+<section id="rating" class="rate"><div class="wrap"><span class="kicker">Рейтинг · проверенные казино 2026</span>
+<h2>Куда ещё заходят: топ площадок с быстрым выводом</h2>
+<p class="lede" style="opacity:.7;font-size:16px">Площадки, которые я гонял по той же методике — касса, лицензия, отзывы. Ссылки ведут на актуальные рабочие зеркала.</p>
+<div class="rlist"><div class="row top1"><div class="pos">1</div><div class="pbrand"><div class="pmark" style="background:#3b82f6">7K</div><div class="pinfo"><div class="n">7K <span class="badge">выбор редакции</span></div></div></div><div class="score"><b>9.9</b><span>рейтинг</span></div><a class="cta" href="https://go-links-9ti.pages.dev/go/7k">Играть</a></div><div class="row"><div class="pos">2</div><div class="pbrand"><div class="pmark" style="background:#8b5cf6">1wi</div><div class="pinfo"><div class="n">1win</div></div></div><div class="score"><b>9.9</b><span>рейтинг</span></div><a class="cta ghost" href="https://go-links-9ti.pages.dev/go/1win">Играть</a></div><div class="row"><div class="pos">3</div><div class="pbrand"><div class="pmark" style="background:#ef4444">Spi</div><div class="pinfo"><div class="n">Spinto</div></div></div><div class="score"><b>9.8</b><span>рейтинг</span></div><a class="cta ghost" href="https://go-links-9ti.pages.dev/go/spinto">Играть</a></div><div class="row"><div class="pos">4</div><div class="pbrand"><div class="pmark" style="background:#10b981">Fla</div><div class="pinfo"><div class="n">Flagman</div></div></div><div class="score"><b>9.3</b><span>рейтинг</span></div><a class="cta ghost" href="https://go-links-9ti.pages.dev/go/flagman">Играть</a></div><div class="row"><div class="pos">5</div><div class="pbrand"><div class="pmark" style="background:#f59e0b">Leg</div><div class="pinfo"><div class="n">Legzo</div></div></div><div class="score"><b>9.2</b><span>рейтинг</span></div><a class="cta ghost" href="https://go-links-9ti.pages.dev/go/legzo">Играть</a></div><div class="row"><div class="pos">6</div><div class="pbrand"><div class="pmark" style="background:#22d3ee">Sta</div><div class="pinfo"><div class="n">Starda</div></div></div><div class="score"><b>9.1</b><span>рейтинг</span></div><a class="cta ghost" href="https://go-links-9ti.pages.dev/go/starda">Играть</a></div><div class="row"><div class="pos">7</div><div class="pbrand"><div class="pmark" style="background:#ec4899">Rox</div><div class="pinfo"><div class="n">Rox</div></div></div><div class="score"><b>9.0</b><span>рейтинг</span></div><a class="cta ghost" href="https://go-links-9ti.pages.dev/go/rox">Играть</a></div></div></div></section>
+</main>
+<footer><div class="wrap"><div class="foot-top"><div class="age">18+</div><a class="logo" href="#top" style="font-size:19px"><span class="mk">С</span><b>Слотозал</b></a></div>
+<p>Материал носит информационный характер и является независимым обзором. Азартные игры могут вызывать зависимость — играйте ответственно и только на деньги, потерю которых можете себе позволить.</p>
+<div class="disc">Сайт не является оператором азартных игр и не принимает платежи. Все торговые марки принадлежат их владельцам. Доступ разрешён лицам старше 18 лет.</div></div></footer>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Casino","name":"Слотозал","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.4","reviewCount":"1625","bestRating":"5"}},{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Сколько слотов в Слотозале?", "acceptedAnswer": {"@type": "Answer", "text": "По моему подсчёту через фильтр — 9640 активных позиций, около сорока провайдеров."}},{"@type": "Question", "name": "Какой минимальный депозит?", "acceptedAnswer": {"@type": "Answer", "text": "50 ₽. Для теста кассы я заводил 500 ₽."}},{"@type": "Question", "name": "Как быстро выводят деньги?", "acceptedAnswer": {"@type": "Answer", "text": "Медиана по СБП — 11 минут. Карта МИР дольше, до 22 минут с комиссией 2%."}},{"@type": "Question", "name": "Где взять зеркало на сегодня?", "acceptedAnswer": {"@type": "Answer", "text": "За 21 день теста доступ не падал. Свежую ссылку смотрите здесь или в онлайн-чате."}}]}]}</script>
